@@ -1,4 +1,4 @@
-Keep commands executing in a loop.
+Keeps commands executing in a loop.
 You can change the delay in seconds between each command.
 You can set a number of times for the command to execute.
 Usage: looper command -d 3 -n 100.
