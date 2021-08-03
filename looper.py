@@ -34,16 +34,13 @@ def get_input() -> Info:
 
 	try:
 		command = input("Command: ").strip()
-		if command == "":
-			exit(1)
+		if not command == "": exit(1)
 
 		idelay = input("Delay (seconds): ").strip()
-		if idelay != "":
-			delay = int(idelay)
+		if idelay: delay = int(idelay)
 
 		icounter= input("Number of counter (Default: infinite): ").strip()
-		if icounter != "":
-			counter = int(icounter)
+		if icounter: counter = int(icounter)
 	except:
 		exit(1)
 		
