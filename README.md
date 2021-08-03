@@ -6,9 +6,9 @@ You can set the number of times the command runs.
 
 ### Usage: 
 
-`looper date -d 3 -n 100`
+`python3 looper.py -d 1 -n 3 date`
 
-This runs 'date' every 3 seconds 100 times, then stops.
+This runs 'date' every second 3 times, then stops.
 
 If n is left empty or 0 it will run indefinitely until interrupted.
 
