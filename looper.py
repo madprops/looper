@@ -39,7 +39,7 @@ def get_input() -> Info:
 		idelay = input("Delay (seconds): ").strip()
 		if idelay: delay = int(idelay)
 
-		icounter= input("Number of counter (Default: infinite): ").strip()
+		icounter= input("Iterations (Default: infinite): ").strip()
 		if icounter: counter = int(icounter)
 	except:
 		exit(1)
