@@ -34,7 +34,7 @@ def get_input() -> Info:
 
 	try:
 		command = input("Command: ").strip()
-		if not command == "": exit(1)
+		if not command: exit(1)
 
 		idelay = input("Delay (seconds): ").strip()
 		if idelay: delay = int(idelay)
