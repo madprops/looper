@@ -25,7 +25,12 @@ def main() -> None:
 			info = get_input()
 		else:
 			info = parse_arguments()
-		run(info)
+			
+		while True:
+			os.system(info.command)
+			if not info.infinite: 
+				if info.iteration(): break
+			time.sleep(info.delay)
 	except KeyboardInterrupt:
 		pass
 
@@ -66,12 +71,5 @@ def parse_arguments() -> Info:
 		exit(1)
 	
 	return Info(command, delay, counter)
-
-def run(info: Info) -> None:
-	while True:
-		os.system(info.command)
-		if not info.infinite: 
-			if info.iteration(): break
-		time.sleep(info.delay)
 
 if __name__ == "__main__": main()
