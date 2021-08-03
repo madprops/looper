@@ -6,7 +6,7 @@ You can set the number of times the command runs.
 
 ### Usage: 
 
-`looper date -d 3 -n 100.`
+`looper date -d 3 -n 100`
 
 This runs 'date' every 3 seconds 100 times, then stops.
 
